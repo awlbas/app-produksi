@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import AirContextProvider from './contexts/AirContext';
+import Navbar from './components/Navbar';
+import ItemList from './components/ItemList';
+import ItemDetail from './components/ItemDetail';
+import BatchTicket from './components/BatchTicket';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <Switch>
+        <AirContextProvider>
+          <Route exact path='/' component={ItemList} />
+          <Route path='/kartustok/:nama_item' component={ItemDetail} />
+          <Route path='/batchticket' component={BatchTicket} />
+        </AirContextProvider>
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 
