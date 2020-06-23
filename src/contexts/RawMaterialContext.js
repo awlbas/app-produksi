@@ -1,22 +1,23 @@
-import React, { createContext, useReducer } from 'react';
-// import { itemReducer } from '../reducers/ItemReducer'
-import { StokReducer } from '../reducers/StokReducer';
+import React, { createContext, useState, useEffect } from 'react';
 
-export const RawMaterialContext = createContext();
+export const RawMaterialContext = createContext()
 
 const RawMaterialContextProvider = (props) => {
 
-  const init = [
-    {id:1, nama:'air',total: 1000},
-    {id:2, nama:'JP 24',total:1500},
-    {id:3, nama:'PVC 680',total:2500},
-    {id:4, nama:'Bioc P-520',total:5000}
-  ];
+  const url = "http://192.168.88.111/firebird/data.php"
+  const [items, setItem] = useState([])
 
-  const [items, dispatch] = useReducer(StokReducer, [...init]);
-  
+  const fetchRawMaterials = async () => {
+    const rawMaterialsData = await fetch(url).then(res=>res.json())
+    setItem(rawMaterialsData)
+  }
+
+  useEffect(() => {
+    fetchRawMaterials()
+  }, [])
+
   return (
-    <RawMaterialContext.Provider value={{items, dispatch}}>
+    <RawMaterialContext.Provider value={{items}}>
       {props.children}
     </RawMaterialContext.Provider>
   );

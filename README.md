@@ -66,3 +66,23 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+############### 
+barang keluar
+- barang jadi
+
+produk jadi
+- batch
+- produk keluar
+
+Produk keluar
+- surat jalan keluar
+- tanggal 
+- item
+- customer database/retail
+
+item masuk
+- surat jalan masuk
+- tanggal 
+- item
+- suplier

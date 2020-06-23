@@ -7,8 +7,9 @@ function Navbar () {
       <div className="container">
         <Link className="brand-logo" to="/">Raw Material</Link>
         <ul className="right">
-          <li><NavLink exact to="/">Daftar Barang</NavLink></li>
+          <li><NavLink exact to="/">Kartu Stock</NavLink></li>
           <li><NavLink to='/batchticket'>Batch Ticket</NavLink></li>
+          <li><NavLink to='/itemmasuk'>Item Masuk</NavLink></li>
         </ul>
       </div>
     </nav> 
