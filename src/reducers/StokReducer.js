@@ -1,8 +1,6 @@
 import uuid from 'uuid/v4';
 
 export const StokReducer = (state, action) => {
-  console.log(state)
-  console.log(action)
   switch (action.type) {
     case 'ADD_DATA':
       return [...state, {

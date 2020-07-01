@@ -1,19 +1,25 @@
-import React, {useContext, useState} from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
-import { BatchTicketContext } from '../contexts/BatchTicketContext';
+import {connect} from 'react-redux'  
+import { addBatchTicket } from '../actions/batchTicketAction'
+
+
 
 function BatchTicket(props) {
-  const {dataBatch, dispatchBatch} = useContext(BatchTicketContext)
+  // const {dataBatch, dispatchBatch} = useContext(BatchTicketContext);
+  const dataBatch = props.batchTicket
   const [idBatch, setIdBatch] = useState('');
   const [tanggal, setTanggal] = useState('');
   const [namaProduk, setNamaProduk] = useState('');
   const [qtyOrder, setQtyOrder] = useState('');
-  
+  // const newData = {idBatch,tanggal,namaProduk,qtyOrder};
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatchBatch({type:'ADD_BATCH_TICKET', 
-    data: {idBatch,tanggal,namaProduk,qtyOrder}});
-    props.history.push('formbatchitem', idBatch)
+    props.addBatchTicket({idBatch,tanggal,namaProduk,qtyOrder})
+    // dispatchBatch({type:'ADD_BATCH_TICKET', 
+    // data: {idBatch,tanggal,namaProduk,qtyOrder}});
+    // props.history.push('formbatchitem', idBatch)
   }
 
   const list = dataBatch.map(item => {
@@ -46,4 +52,17 @@ function BatchTicket(props) {
   )
 }
 
-export default BatchTicket
+const mapStateToProps = (state) => {
+  return {
+    batchTicket: state.batchTicket
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    addBatchTicket: (batchTicket) => { dispatch(addBatchTicket(batchTicket)) },
+  }
+
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(BatchTicket)

@@ -1,10 +1,9 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom'
-import { KartuStockContext } from '../contexts/KartuStockContext';
+import { connect } from 'react-redux'
 
-function KartuStock () {
-
-  const { dataKartuStock } = useContext(KartuStockContext);
+function KartuStock (props) {
+  const dataKartuStock = props.data
 
   const list = dataKartuStock.map(data => {
     return(
@@ -27,4 +26,12 @@ function KartuStock () {
 
 }
 
-export default KartuStock
+const mapStateToProps = (state, ownProps) => {
+  return {
+    data: state.data
+    // untuk mengembalikan data sesuai dengan id
+    // state.data.find( data => data.id === id)
+  }
+}
+
+export default connect(mapStateToProps)(KartuStock)

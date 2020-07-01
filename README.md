@@ -67,22 +67,21 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-############### 
-barang keluar
-- barang jadi
+### 
 
-produk jadi
-- batch
-- produk keluar
+Component
+- Batch Ticket
+    - Detail
+- Item Masuk
+- Produk Keluar
+- Kartu Stock
 
-Produk keluar
-- surat jalan keluar
-- tanggal 
-- item
-- customer database/retail
+###
+root reducer import reducer yg lain
+import combineReducer dari redux
+// jika ada project jalankan map
+project && projects.map 
+component bisa di iterasi
 
-item masuk
-- surat jalan masuk
-- tanggal 
-- item
-- suplier
+async code diantara dispatch & reducer menggunakan thunk
+

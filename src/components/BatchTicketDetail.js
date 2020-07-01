@@ -3,7 +3,6 @@ import { ItemBatchContext } from '../contexts/ItemBatchContext';
 import { BatchTicketContext } from '../contexts/BatchTicketContext';
 
 function BatchTicketDetail (props) {
-  console.log('batch ticket detail')
   const {dataItem} = useContext(ItemBatchContext)
   const {dataBatch} = useContext(BatchTicketContext)
   const idBatch = props.match.params.id_batch;
