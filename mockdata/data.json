@@ -1,0 +1,71 @@
+[
+  {
+  "itemno": "R100189",
+  "itemdesc": "HPK 200 M"
+  },
+  {
+  "itemno": "R100182",
+  "itemdesc": "ISOCYANATE FILA 510 (RIGID BLACK HARDENER)"
+  },
+  {
+  "itemno": "R100254",
+  "itemdesc": "SUMILITE RESIN PR 1633 I"
+  },
+  {
+  "itemno": "R100241",
+  "itemdesc": "KER 828"
+  },
+  {
+  "itemno": "R100242",
+  "itemdesc": "FILLA 510 RIGID YELLOW RESIN"
+  },
+  {
+  "itemno": "R100243",
+  "itemdesc": "G-PLAST PVA JP 18"
+  },
+  {
+  "itemno": "R100244",
+  "itemdesc": "FILLA 510 RIGID BLACK RESIN"
+  },
+  {
+  "itemno": "R100205",
+  "itemdesc": "CARBON BLACK"
+  },
+  {
+  "itemno": "R100206",
+  "itemdesc": "SUPRASEC 2020"
+  },
+  {
+  "itemno": "R100208",
+  "itemdesc": "SILICONE MOULD RELEASE"
+  },
+  {
+    "tanggal": "01012021",
+    "noNota": "gls/306",
+    "keterangan":"Stock Awal",
+    "masuk": 1000,
+    "keluar": 0,
+    "sisa": 1000
+  },
+  {
+    "noBatch": "btc/01/01/01",
+    "tanggal": "01012021",
+    "Produk": "GLS 306",
+    "qtyOrder": 1000,
+    "items": [
+      {
+        "itemno":"R100189",
+        "itemdesc":"HPK 200 M",
+        "qty": 100
+      },
+      {
+        "itemno":"R100182",
+        "itemdesc": "ISOCYANATE FILA 510 (RIGID BLACK HARDENER)",
+        "qty": 100
+      }
+    ] 
+  }
+
+]
+
+

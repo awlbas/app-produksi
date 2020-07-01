@@ -1,0 +1,37 @@
+{
+    "noBatch": "btc/01/01/01",
+    "tanggal": "01012021",
+    "Produk": "GLS 306",
+    "qtyOrder": 1000,
+    "items": [
+      {
+        "itemno":"R100189",
+        "itemdesc":"HPK 200 M",
+        "qty": 100
+      },
+      {
+        "itemno":"R100182",
+        "itemdesc": "ISOCYANATE FILA 510 (RIGID BLACK HARDENER)",
+        "qty": 100
+      }
+    ] 
+}
+
+{
+    "noBatch": "btc/02/02/02",
+    "tanggal": "01012021",
+    "Produk": "GLS 307",
+    "qtyOrder": 1000,
+    "items": [
+      {
+        "itemno":"R100189",
+        "itemdesc":"HPK 200 M",
+        "qty": 100
+      },
+      {
+        "itemno":"R100182",
+        "itemdesc": "ISOCYANATE FILA 510 (RIGID BLACK HARDENER)",
+        "qty": 100
+      }
+    ] 
+}

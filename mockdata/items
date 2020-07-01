@@ -1,0 +1,53 @@
+{
+  "itemno": "R100189",
+  "itemdesc": "HPK 200 M",
+  "kartuStok": [
+    {
+        "tanggal": "01012020",
+        "keterangan":"Stock Awal",
+        "masuk": 1000,
+        "sisa": 1000
+    },
+    {
+        "tanggal": "01012021",
+        "noNota": "gls/306",
+        "keterangan":"produksi gls 306",
+        "keluar": 100,
+        "sisa": 900
+    },
+    {
+        "tanggal": "01012021",
+        "noNota": "gls/307",
+        "keterangan":"produksi gls 307",
+        "keluar": 100,
+        "sisa": 800
+    }
+  ]
+}
+
+{
+  "itemno": "R100182",
+  "itemdesc": "ISOCYANATE FILA 510 (RIGID BLACK HARDENER)",
+  "kartuStok": [
+    {
+        "tanggal": "01012020",
+        "keterangan":"Stock Awal",
+        "masuk": 1000,
+        "sisa": 1000
+    },
+    {
+        "tanggal": "01012021",
+        "noNota": "gls/306",
+        "keterangan":"produksi gls 306",
+        "keluar": 100,
+        "sisa": 900
+    },
+    {
+        "tanggal": "01012021",
+        "noNota": "gls/307",
+        "keterangan":"produksi gls 307",
+        "keluar": 100,
+        "sisa": 800
+    }
+  ]
+}
