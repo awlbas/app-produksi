@@ -1,5 +1,5 @@
 import React, { createContext, useReducer } from 'react';
-import { StokReducer } from '../reducers/StokReducer'
+import { StokReducer } from '../store/reducers/StokReducer'
 
 export const KartuStockContext = createContext();
 

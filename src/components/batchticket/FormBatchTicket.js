@@ -1,8 +1,8 @@
 import React, {useContext, useState} from 'react'
-import { RawMaterialContext } from '../contexts/RawMaterialContext';
-import { BatchTicketContext } from '../contexts/BatchTicketContext';
-import { ItemBatchContext } from '../contexts/ItemBatchContext';
-import { KartuStockContext } from '../contexts/KartuStockContext';
+import { RawMaterialContext } from '../../contexts/RawMaterialContext';
+import { BatchTicketContext } from '../../contexts/BatchTicketContext';
+import { ItemBatchContext } from '../../contexts/ItemBatchContext';
+import { KartuStockContext } from '../../contexts/KartuStockContext';
 
 function BatchTicket(props) {
   const {items} = useContext(RawMaterialContext)

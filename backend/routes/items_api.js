@@ -3,7 +3,7 @@ const ItemsModel = require('../models/items_model')
 const router = express.Router()
 
 router.get('/items', (req,res)=>{
-    res.send('get')
+  ItemsModel.find().then(items => res.send(items))
 })
 
 router.post('/items', (req,res,next)=>{

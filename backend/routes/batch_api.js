@@ -3,7 +3,7 @@ const BatchModel = require('../models/batch_model')
 const router = express.Router()
 
 router.get('/batch', (req,res)=>{
-    res.send('get')
+  BatchModel.find(req.query).then(batches => res.send(batches))
 })
 
 router.post('/batch', (req,res,next)=>{

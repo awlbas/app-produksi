@@ -1,37 +1,40 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import {connect} from 'react-redux'  
-import { addBatchTicket } from '../actions/batchTicketAction'
-
-
+import { addBatch } from '../store/actions/addBatch'
 
 function BatchTicket(props) {
-  // const {dataBatch, dispatchBatch} = useContext(BatchTicketContext);
-  const dataBatch = props.batchTicket
+  const [batches, setBatches] = useState([])
   const [idBatch, setIdBatch] = useState('');
   const [tanggal, setTanggal] = useState('');
   const [namaProduk, setNamaProduk] = useState('');
   const [qtyOrder, setQtyOrder] = useState('');
-  // const newData = {idBatch,tanggal,namaProduk,qtyOrder};
-
+  
+  console.log(batches)
   const handleSubmit = (e) => {
-    e.preventDefault();
-    props.addBatchTicket({idBatch,tanggal,namaProduk,qtyOrder})
-    // dispatchBatch({type:'ADD_BATCH_TICKET', 
-    // data: {idBatch,tanggal,namaProduk,qtyOrder}});
-    // props.history.push('formbatchitem', idBatch)
+    e.preventDefault()
+    props.addBatch({idBatch,tanggal,namaProduk,qtyOrder})
+  }
+  
+  const fetchBatch = async () => {
+    fetch("http://localhost:4000/api/batch").then(res=>res.json())
+    .then( res => setBatches(res))
   }
 
-  const list = dataBatch.map(item => {
+  useEffect(() => {
+    fetchBatch()
+  }, [])
+
+  const list = batches.map(batch => {
     return(
-      <li key={item.idBatch}>
-          No Batch: {item.idBatch} Tanggal: {item.tanggal} - 
-          Nama Produk: {item.namaProduk} - Kuantitas Order: {item.qtyOrder} KG  
-          <br/> <Link to={'/batchticket/' + item.idBatch}>Detail</Link>
+      <li key={batch._id}>
+          No Batch: {batch.noBatch} Tanggal: {batch.tanggal} - 
+          Nama Produk: {batch.produk} - Kuantitas Order: {batch.qtyOrder} KG  
+          <br/> <Link to={'/batchticket/' + batch.noBatch}>Detail</Link>
       </li>
     )
   })
-
+  
   return (
     <div>
       <ul>
@@ -54,15 +57,14 @@ function BatchTicket(props) {
 
 const mapStateToProps = (state) => {
   return {
-    batchTicket: state.batchTicket
+    batch: state.batch
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    addBatchTicket: (batchTicket) => { dispatch(addBatchTicket(batchTicket)) },
+    addBatch: (batch) => { dispatch(addBatch(batch)) }
   }
-
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(BatchTicket)
