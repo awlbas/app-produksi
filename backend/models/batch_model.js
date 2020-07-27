@@ -40,3 +40,4 @@ const BatchScheme = new Schema({
 
 const BatchModel = mongoose.model('batch', BatchScheme)
 module.exports = BatchModel
+ 

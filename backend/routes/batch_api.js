@@ -20,4 +20,4 @@ router.delete('/batch/:id', (req,res)=>{
   res.send('delete')
 })
 
-module.exports = router
+module.exports = router 

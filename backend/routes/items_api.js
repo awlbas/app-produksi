@@ -9,7 +9,7 @@ router.get('/items', (req,res)=>{
 router.post('/items', (req,res,next)=>{
   ItemsModel.create(req.body).then( item => {
     res.send(item)
-  }).catch(next)
+  }).catch(next) 
 })
 
 router.put('/items/:id', (req,res, next)=>{

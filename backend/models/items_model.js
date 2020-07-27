@@ -47,4 +47,4 @@ const ItemsScheme = new Schema({
 })
 
 const ItemsModel = mongoose.model('items', ItemsScheme)
-module.exports = ItemsModel
+module.exports = ItemsModel 
