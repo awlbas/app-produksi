@@ -19,4 +19,4 @@ app.use('/api', itemRouter)
 app.use('/api', batchRouter)
 // app.use((err,res)=>res.status(422).send({error:err._message}))
 
-app.listen(4000, () => console.log('now listening for request'))
+app.listen(4000, () => console.log('now listening for request')) 
