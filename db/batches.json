@@ -1,0 +1,59 @@
+[{
+  "_id": {
+    "$oid": "5efc38f00a014a33849a3445"
+  },
+  "noBatch": "btc-01-01-01",
+  "tanggal": {
+    "$date": "1970-01-01T00:16:52.021Z"
+  },
+  "produk": "GLS 306",
+  "qtyOrder": 1000,
+  "items": [
+    {
+      "_id": {
+        "$oid": "5efc38f00a014a33849a3446"
+      },
+      "itemno": "R100189",
+      "itemdesc": "HPK 200 M",
+      "qty": 100
+    },
+    {
+      "_id": {
+        "$oid": "5efc38f00a014a33849a3447"
+      },
+      "itemno": "R100182",
+      "itemdesc": "ISOCYANATE FILA 510 (RIGID BLACK HARDENER)",
+      "qty": 100
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5efc39560a014a33849a3448"
+  },
+  "noBatch": "btc-02-02-02",
+  "tanggal": {
+    "$date": "1970-01-01T00:16:52.021Z"
+  },
+  "produk": "GLS 307",
+  "qtyOrder": 1000,
+  "items": [
+    {
+      "_id": {
+        "$oid": "5efc39560a014a33849a3449"
+      },
+      "itemno": "R100189",
+      "itemdesc": "HPK 200 M",
+      "qty": 100
+    },
+    {
+      "_id": {
+        "$oid": "5efc39560a014a33849a344a"
+      },
+      "itemno": "R100182",
+      "itemdesc": "ISOCYANATE FILA 510 (RIGID BLACK HARDENER)",
+      "qty": 100
+    }
+  ],
+  "__v": 0
+}]

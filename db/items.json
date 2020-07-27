@@ -1,0 +1,112 @@
+[{
+  "_id": {
+    "$oid": "5efc3eab6243d53de0e1ebbf"
+  },
+  "available": true,
+  "itemno": "R100189",
+  "itemdesc": "HPK 200 M",
+  "kartuStok": [
+    {
+      "noNota": "",
+      "masuk": 1000,
+      "keluar": 0,
+      "_id": {
+        "$oid": "5efc3eab6243d53de0e1ebc0"
+      },
+      "tanggal": {
+        "$date": "1970-01-01T00:16:52.020Z"
+      },
+      "keterangan": "Stock Awal",
+      "sisa": 1000
+    },
+    {
+      "noNota": "gls/306",
+      "masuk": 0,
+      "keluar": 100,
+      "_id": {
+        "$oid": "5efc3eab6243d53de0e1ebc1"
+      },
+      "tanggal": {
+        "$date": "1970-01-01T00:16:52.021Z"
+      },
+      "keterangan": "produksi gls 306",
+      "sisa": 900
+    },
+    {
+      "noNota": "gls/307",
+      "masuk": 0,
+      "keluar": 100,
+      "_id": {
+        "$oid": "5efc3eab6243d53de0e1ebc2"
+      },
+      "tanggal": {
+        "$date": "1970-01-01T00:16:52.021Z"
+      },
+      "keterangan": "produksi gls 307",
+      "sisa": 800
+    },
+    {
+      "tanggal": {
+        "$date": "2020-07-01T09:00:26.963Z"
+      },
+      "noNota": "slg/hpk200",
+      "masuk": 200,
+      "keluar": 0,
+      "_id": {
+        "$oid": "5efc50b31d0d8600c8a40542"
+      },
+      "keterangan": "Stock Awal",
+      "sisa": 2000
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5efc3ec76243d53de0e1ebc3"
+  },
+  "available": true,
+  "itemno": "R100182",
+  "itemdesc": "ISOCYANATE FILA 510 (RIGID BLACK HARDENER)",
+  "kartuStok": [
+    {
+      "noNota": "",
+      "masuk": 1000,
+      "keluar": 0,
+      "_id": {
+        "$oid": "5efc3ec76243d53de0e1ebc4"
+      },
+      "tanggal": {
+        "$date": "1970-01-01T00:16:52.020Z"
+      },
+      "keterangan": "Stock Awal",
+      "sisa": 1000
+    },
+    {
+      "noNota": "gls/306",
+      "masuk": 0,
+      "keluar": 100,
+      "_id": {
+        "$oid": "5efc3ec76243d53de0e1ebc5"
+      },
+      "tanggal": {
+        "$date": "1970-01-01T00:16:52.021Z"
+      },
+      "keterangan": "produksi gls 306",
+      "sisa": 900
+    },
+    {
+      "noNota": "gls/307",
+      "masuk": 0,
+      "keluar": 100,
+      "_id": {
+        "$oid": "5efc3ec76243d53de0e1ebc6"
+      },
+      "tanggal": {
+        "$date": "1970-01-01T00:16:52.021Z"
+      },
+      "keterangan": "produksi gls 307",
+      "sisa": 800
+    }
+  ],
+  "__v": 0
+}]
